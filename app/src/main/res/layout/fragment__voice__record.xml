@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_SLP.Fragment_Voice_Record"
+    android:background="@drawable/vector_app_bg">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/vector_slp_logout"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:padding="13dp"
+        android:src="@drawable/text_stroke_voice_record"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_back"
+        app:layout_constraintEnd_toStartOf="@+id/ib_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_back"
+        app:layout_constraintTop_toTopOf="@+id/ib_back">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_info"
+        android:background="@drawable/button_hover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <Spinner
+        android:id="@+id/spinner_voice_record"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40sp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/audio_array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_back">
+
+    </Spinner>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_voice_record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_voice_record">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

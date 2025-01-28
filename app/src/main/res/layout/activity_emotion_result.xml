@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".Exercises.Activity_Emotion_Result">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_close"
+        app:layout_constraintEnd_toStartOf="@+id/category"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toStartOf="@+id/ib_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_close"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/design_green_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="Emotion Check In"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:visibility="invisible"
+        android:padding="8dp"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_menu_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/design_brown_rounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/design_lightbrown_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout22"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_white_rounded"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:gravity="center"
+                    android:text="Results"
+                    android:textColor="@color/medium_light_red"
+                    android:textSize="24sp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:gravity="center"
+                    android:text="Today, I feel..."
+                    android:textColor="#9F7A51"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20">
+
+                    <ImageView
+                        android:id="@+id/iv_first_result"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/vector_emoji_happy"
+                        tools:layout_editor_absoluteX="215dp"
+                        tools:layout_editor_absoluteY="42dp" />
+
+                    <TextView
+                        android:id="@+id/tv_first_result"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mochi_pop_one_regular"
+                        android:gravity="center"
+                        android:text="Happy"
+                        android:textColor="#9F7A51"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView21"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:gravity="center"
+                    android:text="How do you \n feel when you \n speak?"
+                    android:textColor="#9F7A51"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView21"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="@+id/textView17">
+
+                    <ImageView
+                        android:id="@+id/iv_second_result"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/vector_emoji_happy"
+                        tools:layout_editor_absoluteX="215dp"
+                        tools:layout_editor_absoluteY="42dp" />
+
+                    <TextView
+                        android:id="@+id/tv_second_result"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mochi_pop_one_regular"
+                        android:gravity="center"
+                        android:text="Happy"
+                        android:textColor="#9F7A51"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView21"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:gravity="center"
+                    android:text="How easy is it \n to speak"
+                    android:textColor="#9F7A51"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView21"
+                    app:layout_constraintTop_toTopOf="@+id/textView21">
+
+                    <ImageView
+                        android:id="@+id/iv_third_result"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/vector_emoji_happy"
+                        tools:layout_editor_absoluteX="215dp"
+                        tools:layout_editor_absoluteY="42dp" />
+
+                    <TextView
+                        android:id="@+id/tv_third_result"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mochi_pop_one_regular"
+                        android:gravity="center"
+                        android:text="Happy"
+                        android:textColor="#9F7A51"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView21"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

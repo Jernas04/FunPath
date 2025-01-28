@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".Assessment.Activity_BeginnerToAdvanced">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_close"
+        app:layout_constraintEnd_toStartOf="@+id/category"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toStartOf="@+id/ib_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_close"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/design_green_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="Beginner"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_avatar_gamer_boy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/category"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category">
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/design_lightyellow_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="item 1"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+    </ImageView>
+
+
+    <com.capstone.funpath.Helpers.TTSAnimatedTextView
+        android:id="@+id/tv_itemname"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/design_white_rounded"
+        android:fontFamily="@font/mochi_pop_one_regular"
+        android:gravity="center"
+        android:text="Mommy"
+        android:textAllCaps="false"
+        android:textColor="#5D3100"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+    </com.capstone.funpath.Helpers.TTSAnimatedTextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_margin="16dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/loading_blue_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_itemname">
+
+    </ProgressBar>
+
+    <ImageButton
+        android:id="@+id/speakerButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_speaker"
+        app:layout_constraintEnd_toEndOf="@+id/tv_itemname"
+        app:layout_constraintTop_toTopOf="@+id/tv_itemname">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/svg_previous_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/micButton"
+        app:layout_constraintEnd_toStartOf="@+id/micButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/micButton">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/micButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mic_button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prevButton">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/svg_next_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/micButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/micButton"
+        app:layout_constraintTop_toTopOf="@+id/micButton">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:translationZ="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie_loading">
+
+        </com.airbnb.lottie.LottieAnimationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

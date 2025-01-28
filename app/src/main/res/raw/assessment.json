@@ -1,0 +1,212 @@
+{
+  "Beginner": [
+    {
+      "name": "Mommy",
+      "image": "vector_assessment_mommy"
+    },
+    {
+      "name": "Daddy",
+      "image": "vector_assessment_daddy"
+    },
+    {
+      "name": "Playground",
+      "image": "vector_assessment_playground"
+    },
+    {
+      "name": "School",
+      "image": "vector_assessment_school"
+    },
+    {
+      "name": "House",
+      "image": "vector_assessment_house"
+    },
+    {
+      "name": "Red",
+      "image": "vector_assessment_red"
+    },
+    {
+      "name": "Yellow",
+      "image": "vector_assessment_yellow"
+    },
+    {
+      "name": "Violet",
+      "image": "vector_assessment_violet"
+    },
+    {
+      "name": "Sad",
+      "image": "vector_assessment_sad"
+    },
+    {
+      "name": "Happy",
+      "image": "vector_assessment_happy"
+    },
+    {
+      "name": "Excited",
+      "image": "vector_assessment_excited"
+    },
+    {
+      "name": "Eating",
+      "image": "vector_assessment_eating"
+    },
+    {
+      "name": "Drinking",
+      "image": "vector_assessment_drinking"
+    },
+    {
+      "name": "Running",
+      "image": "vector_assessment_running"
+    },
+    {
+      "name": "Sleeping",
+      "image": "vector_assessment_sleeping"
+    },
+    {
+      "name": "Walking",
+      "image": "vector_assessment_walking"
+    },
+    {
+      "name": "Exciting",
+      "image": "vector_assessment_exciting"
+    }
+  ],
+  "Intermediate": [
+    {
+      "name": "Orange Cat",
+      "image": "vector_assessment_orange_cat"
+    },
+    {
+      "name": "Blue Crayon",
+      "image": "vector_assessment_blue_crayon"
+    },
+    {
+      "name": "Happy Dog",
+      "image": "vector_assessment_happy_dog"
+    },
+    {
+      "name": "Sleepy Turtle",
+      "image": "vector_assessment_sleepy_turtle"
+    },
+    {
+      "name": "Big Playground",
+      "image": "vector_assessment_big_playground"
+    },
+    {
+      "name": "Small Mouse",
+      "image": "vector_assessment_small_mouse"
+    },
+    {
+      "name": "Under the Table",
+      "image": "vector_assessment_under_the_table"
+    },
+    {
+      "name": "On the Chair",
+      "image": "vector_assessment_on_the_chair"
+    },
+    {
+      "name": "Ready Set Go",
+      "image": "vector_assessment_ready_set_go"
+    },
+    {
+      "name": "Happy Birthday",
+      "image": "vector_assessment_happy_birthday"
+    },
+    {
+      "name": "Merry Christmas",
+      "image": "vector_assessment_merry_christmas"
+    },
+    {
+      "name": "Swimming Pool",
+      "image": "vector_assessment_swimming_pool"
+    },
+    {
+      "name": "Fall in Line",
+      "image": "vector_assessment_fall_in_line"
+    },
+    {
+      "name": "Sit Down",
+      "image": "vector_assessment_sit_down"
+    },
+    {
+      "name": "Clap Your Hands",
+      "image": "vector_assessment_clap_your_hands"
+    },
+    {
+      "name": "Stomp Your Feet",
+      "image": "vector_assessment_stomp_your_feet"
+    },
+    {
+      "name": "Put It In",
+      "image": "vector_assessment_put_it_in"
+    }
+  ],
+  "Advanced": [
+    {
+      "name": "I want to play",
+      "image": "vector_assessment_i_want_to_play"
+    },
+    {
+      "name": "I like ice cream",
+      "image": "vector_assessment_i_like_ice_cream"
+    },
+    {
+      "name": "I saw four seashells",
+      "image": "vector_assessment_i_saw_four_seashells"
+    },
+    {
+      "name": "Mommy is sleeping",
+      "image": "vector_assessment_mommy_is_sleeping"
+    },
+    {
+      "name": "Daddy is driving the car",
+      "image": "vector_assessment_daddy_is_driving_the_car"
+    },
+    {
+      "name": "She is singing a song",
+      "image": "vector_assessment_she_is_singing_a_song"
+    },
+    {
+      "name": "He is drinking water",
+      "image": "vector_assessment_he_is_drinking_water"
+    },
+    {
+      "name": "We are waiting for the bus",
+      "image": "vector_assessment_we_are_waiting_for_the_bus"
+    },
+    {
+      "name": "The girl is taking a bath",
+      "image": "vector_assessment_the_girl_is_taking_a_bath"
+    },
+    {
+      "name": "The boy forgot his umbrella",
+      "image": "vector_assessment_the_boy_forgot_his_umbrella"
+    },
+    {
+      "name": "The kids are going to school",
+      "image": "vector_assessment_the_kids_are_going_to_school"
+    },
+    {
+      "name": "The dog is outside the house",
+      "image": "vector_assessment_the_dog_is_outside_the_house"
+    },
+    {
+      "name": "She is blowing her birthday cake",
+      "image": "vector_assessment_she_is_blowing_her_birthday_cake"
+    },
+    {
+      "name": "He is stacking toy blocks in the room",
+      "image": "vector_assessment_he_is_stacking_toy_blocks_in_the_room"
+    },
+    {
+      "name": "The girls found a sock under the bed",
+      "image": "vector_assessment_the_girls_found_a_sock_under_the_bed"
+    },
+    {
+      "name": "They are going to the mall to shop",
+      "image": "vector_assessment_they_are_going_to_the_mall_to_shop"
+    },
+    {
+      "name": "The boy is having his haircut",
+      "image": "vector_assessment_the_boy_is_having_his_haircut"
+    }
+  ]
+}

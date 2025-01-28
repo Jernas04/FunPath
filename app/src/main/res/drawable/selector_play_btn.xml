@@ -1,0 +1,7 @@
+<!-- res/drawable/mic_button_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_selected="true" android:drawable="@drawable/vector_pause" />
+    <!-- Disabled state -->
+    <item android:state_selected="false" android:drawable="@drawable/vector_play" />
+</selector>

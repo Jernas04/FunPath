@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">FunPath</string>
+
+    <!--Titles-->
+    <string name="first_slide_title">Welcome to Speech Stutter Check</string>
+    <string name="second_slide_title">Interactive Voice Analysis</string>
+    <string name="third_slide_title">Fun and Engaging Game</string>
+    <string name="fourth_slide_title">Learn and Improve Speech</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">Explore how our app helps children monitor and improve their speech through interactive voice analysis.</string>
+    <string name="second_slide_desc">Utilizes advanced AI to analyze speech patterns and provide feedback in a fun and engaging way.</string>
+    <string name="third_slide_desc">Designed as a game to make speech practice enjoyable and motivating for children.</string>
+    <string name="fourth_slide_desc">Provides insights and tips to help children improve their speech and overcome stuttering challenges.</string>
+
+    <string name="parents_guide">
+        <b>Hi, parents &amp; guardians!</b>
+        \n\n<p> Stuttering or disfluent speech occurs most often in children between the ages of 2 and 6 as they are developing their language skills. Approximately 5 to 10 percent of all children will stutter for some period in their life, lasting from a few weeks to several years (NIDCD, 2017).
+        \n\n  Funpath is a fun and educational application to enhance the fluency and communication skills for your children. In collaboration with your child’s Speech-Language Pathologist/Speech Therapist, this app can be used to assess a child’s speech patterns to identify potential areas of stutter that need to be addressed. Funpath also includes games and exercises with target words and sentences selected by a Speech Therapist for your child to practice and promote fluency in speaking.
+            \n\n For best results, consult a Speech-Language Pathologist/Speech Therapist on how to use Funpath for your child.</p>
+    </string>
+
+    <string name="game_instructions">
+        <b>Redo Button:</b>
+        \n <p>• If you feel the need to retry a specific speech exercise, use the "Redo" button.
+        \n\n<b>Start Button:</b>
+        \n • Click the "Start" button to initiate the assessment. Follow the dynamically changing text color, adjusting your speech pace to match the visual cues provided by the color changes.
+        \n\n<b>Skip Button:</b>
+        \n • If you prefer to skip a particular speech exercise, use the "Skip" button. Note that skipping exercises might impact the completeness of your assessment.
+        \n\n<b>Sound Button:</b>
+            \n • Click the "Sound" button to hear the correct pronunciation for each speech exercise. Use this as a reference to refine your own speech patterns.</p>
+    </string>
+
+    <string name="tips">
+        \n<p>• Relax and speak naturally during the assessment.
+        \n\n• Focus on the prompts and respond in a comfortable manner.
+        \n\n• The assessment is designed to be supportive and informative.
+            \n\n Feel free to use the help button for more information or guidance during the assessment process. Your dedication to this assessment is a positive step toward improving speech fluency.</p>
+    </string>
+    <string name="terms_conditions">
+        <p>    Welcome to our Android-based mobile application. By accessing or using this application, you agree to the terms and conditions outlined below. Please read them carefully.</p>
+        \n\n<b>Acceptance of Terms</b>\n<p>    By downloading, installing, or using this application, you agree to be bound by these Terms and Conditions.</p>
+        \n\n<b>Intended Use</b>\n<p>    The application is designed for children aged 3 to 7 years old with developmental stuttering and for use by parents, guardians, or Speech-Language Pathologists.</p>
+        \n\n<b>Features</b>
+        \n<b>Assessment: </b><p> Speech evaluation with words and phrases.</p>
+        \n<b>Exercises: </b><p> Activities to improve speech, such as pacing games and story-building.</p>
+        \n<b>Play and Learn: </b><p> Fun games for speech improvement.</p>
+        \n<b>SLP’s Lobby: </b><p> For registered Speech-Language Pathologists (SLPs) to track progress.</p>
+        \n\n<b>Data Privacy and Security</b>\n<p>   Data (like voice recordings and assessments) is stored securely in Firebase. Parents must consent to data collection for their children.</p>
+        \n\n<b>Limitations of Use</b>\n<p>  The app works only on Android devices with an internet connection.It’s best used in quiet environments, and skipping levels is not allowed.</p>
+        \n\n<b>Role of SLPs</b>\n<p>    SLPs can access the app’s lobby to manage and review progress but are not replaced by the app.</p>
+        \n\n<b>User Responsibilities</b>\n<p>   Parents must supervise children and provide accurate information. Misuse of the app can result in account termination.</p>
+        \n\n<b>Intellectual Property</b>\n<p>   The app’s content is protected by copyright laws. Changes to features can only be made with an SLP’s input.</p>
+        \n\n<b>Limitation of Liability</b>\n <p>    The developers are not liable for issues like inaccurate results from noisy environments or technical problems.</p>
+        \n\n<p>For inquiries, feedback, or support, please message us at:\n</p>
+        \n<a href="mailto:sawarijernas@gmail.com">sawarijernas@gmail.com</a>
+        \n<a href="mailto:denieseroasa@gmail.com">denieseroasa@gmail.com</a>
+        \n<a href="mailto:markjuliussoriano535@gmail.com">markjuliussoriano535@gmail.com</a>
+    </string>
+    <string name="title_activity_picture_cards_passed">Activity_PictureCards_Passed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+
+    <string-array name="story_building">
+        <item>
+        One day a shepherd discovered a fat Pig in the meadow where his Sheep were pastured. He very quickly captured the porker, which squealed at the top of its voice the moment the Shepherd laid his hands on it.
+        </item>
+        <item>
+        Once upon a time, Ruby the rabbit wanted to touch a rainbow. She jumped and jumped but couldn’t reach it. Her friend Timmy the turtle came by and suggested they climb a hill to see it better. They watched the rainbow
+        </item>
+        <item>
+        Sam the squirrel was afraid of heights, so he stayed on the ground. One day, a storm blew his favorite acorn onto a high branch. With encouragement from his friend Lily, Sam bravely climbed the tree and got the acorn.
+        </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="age_array">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="school_level_array">
+        <item>Nursery</item>
+        <item>Kinder</item>
+        <item>Pre-School</item>
+        <item>Grade 1 and above</item>
+    </string-array>
+
+    <string-array name="audio_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+</resources>

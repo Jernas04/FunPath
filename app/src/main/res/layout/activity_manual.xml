@@ -1,0 +1,187 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".Manuals.Activity_Manual">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/vector_back"
+        android:scaleType="fitXY"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <!-- Parent's Guide Section -->
+            <LinearLayout
+                android:id="@+id/section_parents_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_white_rounded"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/heading_parents_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="Parent's Guide"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/content_parents_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="@string/parents_guide"
+                    android:textColor="#3F4553"
+                    android:textSize="16dp"
+                    android:justificationMode="inter_word"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Games Instructions Section -->
+            <LinearLayout
+                android:id="@+id/section_games_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_white_rounded"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/heading_games_instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="Games Instructions"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/content_games_instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="@string/game_instructions"
+                    android:textColor="#3F4553"
+                    android:textSize="16dp"
+                    android:justificationMode="inter_word"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Tips for Success Section -->
+            <LinearLayout
+                android:id="@+id/section_tips_for_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_white_rounded"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/heading_tips_for_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="Tips for Success"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/content_tips_for_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="@string/tips"
+                    android:textColor="#3F4553"
+                    android:textSize="16dp"
+                    android:justificationMode="inter_word"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Terms and Conditions Section -->
+            <LinearLayout
+                android:id="@+id/section_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_white_rounded"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/heading_terms_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="Terms and Conditions"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/content_terms_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="@string/terms_conditions"
+                    android:textColor="#3F4553"
+                    android:textSize="16dp"
+                    android:justificationMode="inter_word"
+                    android:linksClickable="true"
+                    android:autoLink="email"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

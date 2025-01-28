@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".Manuals.Activity_Manual_Assessment">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_hover"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/design_white_rounded"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="How to do an assessment?"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/manuals_assessment">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="  Hold the mic button to detect speech by speaking words, phrases, or sentences, ensuring you are in a quiet and isolated place to avoid noise, and it's better to use a headset for clearer voice quality."
+                    android:textColor="@color/blue"
+                    android:justificationMode="inter_word"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="Take note:"
+                    android:textColor="@color/light_red"
+                    android:textStyle="bold"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="  You need to beat the duration bar to proceed to the next level. If the duration bar runs out, it will reset to the beginning."
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/mochi_pop_one_regular"
+                    android:text="You are strong, smart, and capable of doing great things!"
+                    android:textColor="#0D6F00"
+                    android:textStyle="bold"
+                    android:textSize="25dp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

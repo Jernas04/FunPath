@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Kapag pinindot (pressed), scale down -->
+    <item android:state_pressed="true">
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:valueFrom="2.0"
+            android:valueTo="2.0"
+            android:duration="200"
+            android:valueType="floatType" />
+        <objectAnimator
+            android:propertyName="scaleY"
+            android:valueFrom="2.0"
+            android:valueTo="2.0"
+            android:duration="200"
+            android:valueType="floatType" />
+    </item>
+
+    <!-- Default state (walang interaction), scale normal -->
+    <item>
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:valueFrom="0.9"
+            android:valueTo="1.0"
+            android:duration="200"
+            android:valueType="floatType" />
+        <objectAnimator
+            android:propertyName="scaleY"
+            android:valueFrom="0.9"
+            android:valueTo="1.0"
+            android:duration="200"
+            android:valueType="floatType" />
+    </item>
+</selector>

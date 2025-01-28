@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".PlayAndLearn.Activity_PictureCards">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_close"
+        app:layout_constraintEnd_toStartOf="@+id/category"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toStartOf="@+id/ib_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_close"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_picturecards"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/design_green_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="Sentence Level"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/vector_menu_orange"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/speakerButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_speaker"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4">
+
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_container1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_a_apple"></ImageView>
+        <ImageView
+            android:id="@+id/iv_container2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_a_apple"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/iv_container3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_a_apple"
+            ></ImageView>
+    </LinearLayout>
+
+    <com.capstone.funpath.Helpers.TTSAnimatedTextView
+        android:id="@+id/tv_itemname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/prevButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/buttonChoicesContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/vector_a_apple"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/vector_a_apple">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/vector_a_apple">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_previous_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/redoButton" />
+
+    <ImageButton
+        android:id="@+id/redoButton"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/redo_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prevButton"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_next_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/redoButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

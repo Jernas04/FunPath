@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "494048035320",
+    "firebase_url": "https://funpath-3800e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "funpath-3800e",
+    "storage_bucket": "funpath-3800e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494048035320:android:9efb255e734a5655da960d",
+        "android_client_info": {
+          "package_name": "com.capstone.funpath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW22KwbBOZIWMS2e9mWLAfG3K9JfYJIn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

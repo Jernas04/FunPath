@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_app_bg"
+    tools:context=".PlayAndLearn.Activity_WordRace">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_close"
+        app:layout_constraintEnd_toStartOf="@+id/category"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toStartOf="@+id/ib_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_close"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/design_green_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="Word Race"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/vector_menu_orange"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/design_white_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/category"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category">
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/design_lightyellow_rounded"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:gravity="center"
+            android:text="level 1"
+            android:textAllCaps="false"
+            android:textColor="#CC000000"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="time left: 60"
+        android:textColor="#5D3100"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+    <LinearLayout
+        android:id="@+id/ll_star_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_itemname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vector_star">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vector_star"></ImageView>
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vector_star"></ImageView>
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vector_star"></ImageView>
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vector_star"></ImageView>
+
+    </LinearLayout>
+
+
+    <com.capstone.funpath.Helpers.TTSAnimatedTextView
+        android:id="@+id/tv_itemname"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/design_white_rounded"
+        android:fontFamily="@font/mochi_pop_one_regular"
+        android:gravity="center"
+        android:text="Mommy"
+        android:textAllCaps="false"
+        android:textColor="#5D3100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/micButton"
+        app:layout_constraintEnd_toEndOf="@+id/ll_star_container"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/ll_star_container"
+        app:layout_constraintTop_toBottomOf="@+id/ll_star_container"></com.capstone.funpath.Helpers.TTSAnimatedTextView>
+
+    <ImageButton
+        android:id="@+id/speakerButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/vector_speaker"
+        app:layout_constraintEnd_toEndOf="@+id/tv_itemname"
+        app:layout_constraintTop_toTopOf="@+id/tv_itemname">
+
+    </ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/micButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_close_beige"
+        android:elevation="8dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mic_button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manuals.Activity_Manual_SLP"
+    android:background="@drawable/vector_app_bg">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/vector_back"
+        android:scaleType="fitXY"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/design_white_rounded"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="How to use SLP’s Lobby?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_manuals_slp_home">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="  In the home, a list of kids can be seen here."
+            android:textColor="@color/blue"
+            android:justificationMode="inter_word"
+            android:textSize="16dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/design_white_rounded"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="How to use SLP’s Lobby?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_manuals_slp_assessment_analysis">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="  This enables the Speech-Language Pathologist to manage children's records and track progress through a dashboard that focuses on monitoring and supporting their speech development."
+            android:textColor="@color/blue"
+            android:justificationMode="inter_word"
+            android:textSize="16dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/design_white_rounded"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="How to use SLP’s Lobby?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_manuals_slp_kids_profile">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="  The Speech-Language Pathologist can give notes to the kids, and the results of the children's selected emotions can also be seen here."
+            android:textColor="@color/blue"
+            android:justificationMode="inter_word"
+            android:textSize="16dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/design_white_rounded"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="How to use SLP’s Lobby?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_manuals_slp_voice_record">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/mochi_pop_one_regular"
+            android:text="  Here is where the kid’s voice recording will be saved for each assessment."
+            android:textColor="@color/blue"
+            android:justificationMode="inter_word"
+            android:textSize="16dp">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
